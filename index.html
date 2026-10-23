@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clima</title>
+</head>
+
+<body>
+    <!--principal-->
+    <main class="container">
+        <h1>WebClima</h1>
+
+        <!--caixa de busca-->
+        <form id="busca">
+            <input type="text" id="cidade" placeholder="Digite o nome da cidade" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <!--resultado da pesquisa-->
+        <section id="resultado" class="cartao hidden">
+            <h2 id="nome-cidade"></h2>
+            <p class="temperatura" id="temperatura"></p>
+            <p id="umidade"></p>
+            <p id="vento"></p>
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
